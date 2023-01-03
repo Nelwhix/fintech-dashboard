@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@heroicons/vue": "^2.0.13",
+    "spacetime": "^7.4.0",
     "vue": "^3.2.45"
   },
   "devDependencies": {
