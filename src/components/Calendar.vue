@@ -3,7 +3,10 @@ import { CalendarDaysIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/
 import { ref } from 'vue'
 import spacetime from 'spacetime'
 
-const startofweek = spacetime.now().startOf('week')
+const s = spacetime.now()
+s.weekStart("sunday")
+
+const startofweek = s.startOf("week")
 const weekDays = startofweek.every('day', startofweek.endOf('week'))
 
 const CurrentDate = ref(startofweek.monthName() +  " " + startofweek.year())
