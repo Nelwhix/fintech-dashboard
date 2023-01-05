@@ -67,6 +67,11 @@
               <ChevronDownIcon class="w-4 h-4 mt-[2px] ml-3" />
             </div>
           </div>
+          <div>
+            <span>Total Investments</span>
+            <span>$4,250.00</span>
+            <progress value="40%" max="100%">40%</progress>
+          </div>
         </div>
         <div class="px-8">
           <div class="flex justify-between">
