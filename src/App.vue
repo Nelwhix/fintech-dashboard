@@ -94,7 +94,7 @@
         <Avatar class="w-6 h-6" />
         <span class="flex font-medium">Nelson I <ChevronDownIcon class="w-4 h-4 mt-1 ml-2" /></span>
       </div>
-      <div class="border border-gray-200 rounded-md mt-5 mx-10">
+      <div class="border border-gray-200 rounded-md mt-5 mx-6">
         <h2 class="text-center text-gray-600 font-semibold text-lg">Cards</h2>
         <Card />
       </div>
