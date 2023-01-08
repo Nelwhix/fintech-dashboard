@@ -14,7 +14,7 @@ import {
 </script>
 
 <template>
-    <aside class="px-4 pt-5 font-primary hidden sm:block border-r border-gray-300">
+    <aside class="fixed px-4 pt-5 font-primary hidden sm:block border-r border-gray-300">
         <div>
             <logo class="w-36" />
         </div>

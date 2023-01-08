@@ -5,6 +5,9 @@
   import Card from './components/Card.vue'
   import FlowChart from './assets/FlowChart.vue'
   import Avatar from './assets/Avatar.vue'
+  import SendIcon from './assets/SendIcon.vue';
+  import WalletIcon from './assets/WalletIcon.vue';
+  import PhoneIcon from './assets/PhoneIcon.vue'
 
   const cardContents = [
     {
@@ -47,13 +50,13 @@
     <!-- <button class="sm:hidden">
       <Bars4Icon class="w-6 h-6"/>
     </button> -->
-
+    <div></div>
     <section class="col-span-4 bg-[#fcfbfc]">
       <Calendar />
 
       <div class="flex font-primary justify-around mt-5">
         <div v-for="card in cardContents" class="border border-gray-200 rounded-md text-sm p-3">
-          <h3 class="flex">{{ card.title }} <span v-html="card?.icon" class="text-gray-300 mt-[2px] ml-1"></span></h3>
+          <h3 class="flex">{{ card.title }} <span v-html="card.icon" class="text-gray-300 mt-[2px] ml-1"></span></h3>
           <p class="font-medium">{{ card.amount }}</p>
         </div>
       </div>
@@ -94,9 +97,74 @@
         <Avatar class="w-6 h-6" />
         <span class="flex font-medium">Nelson I <ChevronDownIcon class="w-4 h-4 mt-1 ml-2" /></span>
       </div>
-      <div class="border border-gray-200 rounded-md mt-5 mx-6">
+      <div class="border border-gray-200 rounded-2xl mt-5 mx-6">
         <h2 class="text-center text-gray-600 font-semibold text-lg">Cards</h2>
         <Card />
+        <div class="mt-5">
+          <h3 class="text-center font-semibold text-gray-600">Quick Actions</h3>
+          <div class="flex justify-between mx-9 my-3">
+            <span class="border border-gray-300 rounded-md p-2 text-xs">
+              <SendIcon class="w-8 h-8" />
+              Send
+            </span>
+            <span class="border border-gray-300 rounded-md p-2 text-xs">
+              <WalletIcon class="w-8 h-8" />
+              Pay Bills
+            </span>
+            <span class="border border-gray-300 rounded-md p-2 text-xs">
+              <PhoneIcon class="w-8 h-8" />
+              Airtime
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="border border-gray-200 rounded-2xl mt-8 mx-6 mb-5">
+        <div class="flex justify-between mt-5 mx-5">
+          <h2 class="font-semibold text-gray-600">Recent Activity</h2>
+          <span class="text-sm underline mt-[2px]">View all</span>
+        </div>
+        <div class="grid grid-cols-2 mt-7 mx-5 content-around h-80">
+          <div>
+            <p class="font-semibold text-gray-600">Dr. Akinlowo</p>
+            <p class="text-xs text-gray-600">Transfer Debit</p>
+          </div>
+          <div class="">
+            <p class="font-semibold text-red-700">- $3500.00</p>
+            <p class="text-xs text-gray-600">3 mins ago</p>
+          </div>
+          <div>
+            <p class="font-semibold text-gray-600">Dstv Subscription</p>
+            <p class="text-xs text-gray-600">Bill payment</p>
+          </div>
+          <div class="">
+            <p class="font-semibold text-red-700">- $500.00</p>
+            <p class="text-xs text-gray-600">3 mins ago</p>
+          </div>
+          <div>
+            <p class="font-semibold text-gray-600">Password changed</p>
+            <p class="text-xs text-gray-600">Security</p>
+          </div>
+          <div>
+            <p class="text-xs text-gray-600">5 days ago</p>
+          </div>
+          <div>
+            <p class="font-semibold text-gray-600">Aremu Olajide</p>
+            <p class="text-xs text-gray-600">Transfer Credit</p>
+          </div>
+          <div class="">
+            <p class="font-semibold text-green-700">+ $3206.00</p>
+            <p class="text-xs text-gray-600">7 days ago</p>
+          </div>
+          <div>
+            <p class="font-semibold text-gray-600">Facebook</p>
+            <p class="text-xs text-gray-600">Advertising</p>
+          </div>
+          <div>
+            <p class="font-semibold text-red-700">- $800.00</p>
+            <p class="text-xs text-gray-600">12-09-22</p>
+          </div>
+        </div>
+        <p class="font-semibold text-xs my-5 mx-3">Notice any suspicious activity? <span class="underline">Report Now</span></p>
       </div>
     </section>
   </main>
