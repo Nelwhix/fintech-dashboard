@@ -46,10 +46,7 @@
 
 <template>
   <main class="grid grid-cols-7">
-    <Sidebar />
-    <!-- <button class="sm:hidden">
-      <Bars4Icon class="w-6 h-6"/>
-    </button> -->
+    <Sidebar class="w-[14vw] h-screen" />
     <div></div>
     <section class="col-span-4 bg-[#fcfbfc]">
       <Calendar />
@@ -72,7 +69,7 @@
               <ChevronDownIcon class="w-4 h-4 mt-[2px] ml-3" />
             </div>
           </div>
-          <div class="font-semibold text-sm flex justify-between mt-5">
+          <div class="font-semibold text-sm flex justify-between mt-7">
             <span>Total Investments</span>
             <span>$4,250.00</span>
           </div>
@@ -88,6 +85,8 @@
         </div>
       </div>
     </section>
+    
+    <!-- Card Section -->
     <section class="col-span-2 bg-[#fcfbfc] pt-5 font-primary">
       <div class="ml-20 flex justify-around w-56">
         <button>
