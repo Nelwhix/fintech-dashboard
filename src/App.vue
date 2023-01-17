@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import Sidebar from './components/Sidebar.vue';
-  import { Bars4Icon, ChevronDownIcon, MoonIcon, BellIcon } from '@heroicons/vue/24/outline'
+  import { ChevronDownIcon, MoonIcon, BellIcon } from '@heroicons/vue/24/outline'
   import Calendar from './components/Calendar.vue';
   import Card from './components/Card.vue'
   import FlowChart from './assets/FlowChart.vue'
@@ -8,6 +8,7 @@
   import SendIcon from './assets/SendIcon.vue';
   import WalletIcon from './assets/WalletIcon.vue';
   import PhoneIcon from './assets/PhoneIcon.vue'
+  import Analytics from './assets/Analytics.vue'
 
   const cardContents = [
     {
@@ -60,30 +61,7 @@
 
       <FlowChart class="w-[35rem] mx-auto" />
 
-      <div class="font-primary grid grid-cols-2 mx-8">
-        <div class="px-8 border-r border-gray-300">
-          <div class="flex justify-between">
-            <h3 class="font-semibold">Analytics</h3>
-            <div class="flex text-xs border-2 border-gray-300 rounded-md p-1">
-              Investments
-              <ChevronDownIcon class="w-4 h-4 mt-[2px] ml-3" />
-            </div>
-          </div>
-          <div class="font-semibold text-sm flex justify-between mt-7">
-            <span>Total Investments</span>
-            <span>$4,250.00</span>
-          </div>
-        </div>
-        <div class="px-8">
-          <div class="flex justify-between">
-            <h3 class="font-semibold">Statistics</h3>
-            <div class="flex text-xs border-2 border-gray-300 rounded-md p-1">
-              Spendings
-              <ChevronDownIcon class="w-3 h-3 mt-[2px] ml-3" />
-            </div>
-          </div>
-        </div>
-      </div>
+      <Analytics class="w-[40rem] mx-auto" />
     </section>
     
     <!-- Card Section -->
